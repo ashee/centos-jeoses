@@ -1,0 +1,15 @@
+# centos-jeoses
+This project is an attempt to create a minimalistic
+CentOS/RHEV 5.6 install using kickstart files
+
+These have been tested using qemu/kvm. 
+
+## ks-min.cfg
+This is the bare minimum server install. It installs
+156 packages, consumes ~80Mb of RAM and ~750 Mb of disk
+
+## ks-dev.cfg
+This is the bare minimum packages needed to build software
+packages from source. 
+
+
