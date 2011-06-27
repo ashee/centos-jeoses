@@ -4,9 +4,21 @@ CentOS/RHEV 5.6 install using kickstart files
 
 These have been tested using qemu/kvm. 
 
+The kickstarts have postinstall scripts that 
+performs some administrative tasks like setting
+up /etc/sudoers file, setting up user account,
+and install ssh public key for key based login.
+
+Rename the kickstart file to ks.cfg and copy them
+into the floppy image.
+
+Pass the following parameter at install prompt
+
+linux asknetwork ks=floppy
+
 ## ks-min.cfg
 This is the bare minimum server install. It installs
-156 packages, consumes ~80Mb of RAM and ~750 Mb of disk
+161 packages, consumes ~90MB of RAM and ~780 MB of disk
 
 ## ks-dev.cfg
 This is the bare minimum packages needed to build software
